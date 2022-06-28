@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            label {
+                font-weight: bold;
+            }
+            th,
+            tr,
+            td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: center;
+            }
+
+            th,
+            td {
+                padding: 10px;
+            }
+
+            #label {
+                background-color: lightblue;
+            }
+
+            #table {
+                width: 100%;
+                padding: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 입사지원서 -->
+        <div>
+            <h2 style="text-align: center">입사지원서</h2>
+            <table id="table">
+                <tr>
+                    <td id="label">지원분야</td>
+                    <td width="100px"></td>
+                    <td id="label">경력구분</td>
+                    <td>신입</td>
+                    <td id="label">희망연봉</td>
+                    <td>회사 내규에 따름</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 기본정보 -->
+        <div>
+            <label>기본정보</label>
+            <table id="table">
+                <!-- head -->
+                <tr>
+                    <td width="20%" rowspan="6"></td>
+                    <td width="100px" id="label">성명</td>
+                    <td width="100px"></td>
+                    <td width="100px" id="label">한문</td>
+                    <td width="100px"></td>
+                </tr>
+
+                <!-- body -->
+                <tr>
+                    <td id="label">영문</td>
+                    <td></td>
+                    <td id="label">생년월일</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td id="label">전화번호</td>
+                    <td></td>
+                    <td id="label">비상연락망</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td id="label">전자우편</td>
+                    <td></td>
+                    <td id="label">나이</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td id="label">주소</td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <td id="label">취미생활</td>
+                    <td colspan="3"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 학력사항 -->
+        <div>
+            <label>학력사항 (최신이력이 가장 위로)</label>
+            <table id="table">
+                <!-- head -->
+                <tr>
+                    <th id="label">기간</th>
+                    <th id="label">출신학교</th>
+                    <td id="label">구분</td>
+                    <td id="label">학과</td>
+                    <td id="label">소재지</td>
+                </tr>
+
+                <!-- body -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 교육연수 -->
+        <div>
+            <label>교육연수</label>
+            <table id="table">
+                <!-- head -->
+                <tr>
+                    <td id="label">연수기간</td>
+                    <td id="label">연수기관</td>
+                    <td id="label">연수과정 및 내용</td>
+                </tr>
+
+                <!-- body -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 자격사항 -->
+        <div>
+            <label>자격사항</label>
+            <table id="table">
+                <!-- head -->
+                <tr>
+                    <td id="label">취득일</td>
+                    <td id="label">종류 및등급</td>
+                    <td id="label">발행처</td>
+                    <td id="label">보유기술 및 수준</td>
+                </tr>
+
+                <!-- body -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 경력사항 -->
+        <div>
+            <label>경력사항(4대 보험 가입 경력)</label>
+            <table id="table">
+                <!-- head -->
+                <tr>
+                    <td id="label">활동기간</td>
+                    <td id="label">기관</td>
+                    <td id="label">담당업무</td>
+                    <td id="label">경험 및 습득역량</td>
+                </tr>
+
+                <!-- body -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
