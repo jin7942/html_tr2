@@ -7,11 +7,11 @@
         <title>Document</title>
 
         <style>
-            input {
-                width: 100%;
-                border: 0;
-            }
-
+        	table {
+  				width: 100%;
+  				table-layout: fixed;	
+			}
+			
             label {
                 font-weight: bold;
             }
@@ -62,9 +62,9 @@
                 <table class="table">
                     <!-- head -->
                     <tr>
-                        <td width="20%" rowspan="6"></td>
+                        <td width="80px" rowspan="6"><img src="./image/img_sample3.jpg"></td>
                         <td width="100px" class="label">성명</td>
-                        <td width="100px"><input type="text" class="input" name="name" /></td>
+                        <td width="100px"></td>
                         <td width="100px" class="label">한문</td>
                         <td width="100px"></td>
                     </tr>
@@ -74,19 +74,19 @@
                         <td class="label">영문</td>
                         <td></td>
                         <td class="label">생년월일</td>
-                        <td><input type="text" class="input" name="birthDay" /></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td class="label">전화번호</td>
-                        <td><input type="text" class="input" name="mobile" /></td>
+                        <td></td>
                         <td class="label">비상연락망</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td class="label">전자우편</td>
-                        <td><input type="text" class="input" name="email" /></td>
+                        <td></td>
                         <td class="label">나이</td>
-                        <td><input type="text" class="input" name="age" /></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td class="label">주소</td>
@@ -211,7 +211,6 @@
                     </tr>
                 </table>
             </div>
-            <button type="submit" class="btn-submit">제출</button>
         </form>
 
 </html>
