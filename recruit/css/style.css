@@ -1,0 +1,85 @@
+/* list */
+table.list-table {
+	border-collapse: collapse;
+	text-align: left;
+	line-height: 1.5;
+	border: 1px solid #ccc;
+	margin: 20px 10px;
+}
+
+table.list-table thead {
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	background: #C9CCD5;
+}
+
+table.list-table thead th {
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	color: #ffffff;
+}
+
+table.list-table tbody th {
+	width: 150px;
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+	background: #fcf1f4;
+}
+
+table.list-table td {
+	width: 350px;
+	padding: 10px;
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+}
+
+.list-table-body {
+	cursor: pointer;
+}
+
+.list-table-body:hover {
+	background-color: lightgrey;
+}
+
+/* view */
+table.view-table {
+	border-collapse: separate;
+	border-spacing: 1px;
+	text-align: left;
+	line-height: 1.5;
+	border-top: 1px solid #ccc;
+	margin: auto;
+}
+
+table.view-table th {
+	width: 150px;
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+	background: #efefef;
+}
+
+table.view-table td {
+	width: 350px;
+	padding: 10px;
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+}
+
+h2.view-header {
+	text-align: center;
+	margin: 5%;
+}
+
+div.view-footer {
+	text-align: center;
+	margin: 5%;
+}
+
+div.view-footer a {
+	padding: 40px;
+}

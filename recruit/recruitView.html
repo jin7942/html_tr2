@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/style.css">     
+</head>
+<body>
+	<h2 class="view-header">지원이 완료되었습니다.</h2>
+	<table class="view-table">
+		<tr>
+			<td>생년월일</td>
+			<td id="birthDay"></td>
+		</tr>
+		<tr>
+			<td>이름</td>
+			<td id="name"></td>
+		</tr>
+		<tr>
+			<td>나이</td>
+			<td id="age"></td>
+		</tr>
+		<tr>
+			<td>이메일</td>
+			<td id="email"></td>
+		</tr>
+		<tr>
+			<td>연락처</td>
+			<td id="mobile"></td>
+		</tr>
+	</table>
+
+	<div class="view-footer">
+		<a href="./recruitList.html">지원 목록 보기</a> 
+		<a href="./recruitForm.html">돌아가기</a>
+	</div>
+
+
+
+
+	<script type="text/javascript">
+		let query = window.location.search;
+		let param = new URLSearchParams(query);
+		
+		let birthDay = param.get('birthDay');
+		let name = param.get('name');
+		let age= param.get('age');
+		let email = param.get('email');
+		let mobile = param.get('mobile');
+		
+		document.getElementById("birthDay").innerText = birthDay;
+		document.getElementById("name").innerText = name;
+		document.getElementById("age").innerText = age;
+		document.getElementById("email").innerText = email;
+		document.getElementById("mobile").innerText = mobile;
+	</script>
+</body>
+</html>

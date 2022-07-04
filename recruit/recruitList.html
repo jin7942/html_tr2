@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+		<link rel="stylesheet" href="./css/style.css">        
+    </head>
+    <body>
+    	<h2 style="text-align: center;">지원자 목록</h2>
+        <form action="" method="GET" id="form">
+            <table class="list-table">
+                <!-- head -->
+                <thead>
+	                <tr id="del">
+	                    <td>생년월일</td>
+	                    <td>이름</td>
+	                    <td>나이</td>
+	                    <td>이메일</td>
+	                    <td>연락처</td>
+	                    <td>삭제</td>
+	                </tr>
+                </thead>
+
+                <!-- body -->
+                <tbody>
+	                <tr onclick="location.href='./recruitView2.html'" class="list-table-body">
+	                    <td>010811</td>
+	                    <td>김진범</td>
+	                    <td>22</td>
+	                    <td>adisofbn@naver.com</td>
+	                    <td>010-1233-1234</td>
+	                    <td><button type="button" class="btn-delete">Delete</button></td>
+	                </tr>
+	                <tr onclick="location.href='./recruitView3.html'" class="list-table-body">
+	                    <td>980723</td>
+	                    <td>장동건</td>
+	                    <td>28</td>
+	                    <td>nbnap@gmail.com</td>
+	                    <td>010-1235-5764</td>
+	                    <td><button type="button" class="btn-delete">Delete</button></td>
+	                </tr>
+	                <tr onclick="location.href='./recruitView4.html'" class="list-table-body">
+	                    <td>990123</td>
+	                    <td>전지현</td>
+	                    <td>29</td>
+	                    <td>kakboin@daum.net</td>
+	                    <td>010-1245-7567</td>
+	                    <td><button type="button" class="btn-delete">Delete</button></td>
+	                </tr>
+	                <tr onclick="location.href='./recruitView5.html'" class="list-table-body">
+	                    <td>970514</td>
+	                    <td>배유빈</td>
+	                    <td>32</td>
+	                    <td>anaonpb@gmail.com</td>
+	                    <td>010-6423-6948</td>
+	                    <td><button type="button" class="btn-delete">Delete</button></td>
+	                </tr>
+	                <tr onclick="location.href='./recruitView6.html'" class="list-table-body">
+	                    <td>000830</td>
+	                    <td>유시아</td>
+	                    <td>31</td>
+	                    <td>anjopan@kakao.com</td>
+	                    <td>010-1238-5693</td>
+	                    <td><button type="button" class="btn-delete">Delete</button></td>
+	                </tr>
+                </tbody>
+            </table>
+        </form>
+        
+	<script type="text/javascript">
+		var eventTarget = document.getElementsByClassName('btn-delete')
+		for (var i = 0; i < eventTarget.length; i++) {
+			eventTarget[i].addEventListener('click', function() {
+				var parent = document.querySelector('#form tbody')
+				if (i > 1) {
+					parent.removeChild(this.parentElement.parentElement)
+					i--
+				} else {
+					alert('마지막 행은 삭제 불가합니다.')
+				}
+			})
+		}
+	</script>
+
+	</body>
+</html>
