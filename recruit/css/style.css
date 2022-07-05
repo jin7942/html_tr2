@@ -36,7 +36,7 @@ table.list-table td {
 	border-bottom: 1px solid #ccc;
 }
 
-.list-table-body {
+.list-table-link {
 	cursor: pointer;
 }
 
@@ -83,3 +83,30 @@ div.view-footer {
 div.view-footer a {
 	padding: 40px;
 }
+
+/* button */
+.btn-box {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+button {
+	color: var(- -button-color);
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	cursor: pointer;
+	width: 150px;
+	background-color: lightgrey;
+}
+button:hover {
+	background-color: darkgrey;
+}
+
+/* button */

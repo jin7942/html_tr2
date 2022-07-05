@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ModForm</title>
+        <link rel="stylesheet" href="./css/viewStyle.css">
+    </head>
+
+    <body>
+        <!-- 입사지원서 -->
+        <form action="./recruitView.html" method="GET" id="form">
+            <div>
+                <h2 style="text-align: center">입사지원서</h2>
+                <table class="table">
+                    <tr>
+                        <td class="label">지원분야</td>
+                        <td width="100px">
+                        	<input type="text" class="table-input" value="개발"/>
+                        </td>
+                        <td class="label">경력구분</td>
+                        <td>신입</td>
+                        <td class="label">희망연봉</td>
+                        <td>회사 내규에 따름</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 기본정보 -->
+            <div>
+                <label>기본정보</label>
+                <table class="table">
+                    <!-- head -->
+                    <tr>
+                        <td width="100px" rowspan="6">
+                        	<div><img src="../images/img_sample4.jpg"></div>
+                        </td>
+                        <td width="100px" class="label">성명</td>
+                        <td width="100px">
+                        	<input type="text" class="table-input" value="김진범" id="name"/>
+                        </td>
+                        <td width="100px" class="label">한문</td>
+                        <td width="100px">
+                        	<input type="text" class="table-input" value="金鎭範"/>
+                        </td>
+                    </tr>
+
+                    <!-- body -->
+                    <tr>
+                        <td class="label">영문</td>
+                        <td>
+							<input type="text" class="table-input" value="Kim Jin buem"/>
+						</td>
+                        <td class="label">생년월일</td>
+                        <td>
+							<input type="text" class="table-input" value="2021-08-11" id="birthDay"/>
+						</td>
+                    </tr>
+                    <tr>
+                        <td class="label">전화번호</td>
+                        <td>
+							<input type="text" class="table-input" value="010-1234-5678" id="mobile"/>
+						</td>
+                        <td class="label">비상연락망</td>
+                        <td>
+                        	<input type="text" class="table-input" value="010-4321-4321"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">전자우편</td>
+                        <td>
+                        	<input type="text" class="table-input" value="abnopanbb@gmail.com" id="email"/>
+                        </td>
+                        <td class="label">나이</td>
+                        <td>
+                        	<input type="text" class="table-input" value="22세"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">주소</td>
+                        <td colspan="3">
+                        	<input type="text" class="table-input" value="수원시 팔달구"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">취미생활</td>
+                        <td colspan="3">
+                        	<input type="text" class="table-input" value="영화감상"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 학력사항 -->
+            <div>
+                <label>학력사항 (최신이력이 가장 위로)</label>
+                <table class="table">
+                    <!-- head -->
+                    <tr>
+                        <th class="label">기간</th>
+                        <th class="label">출신학교</th>
+                        <td class="label">구분</td>
+                        <td class="label">학과</td>
+                        <td class="label">소재지</td>
+                    </tr>
+
+                    <!-- body -->
+                    <tr>
+                        <td>2222.22.22~3333.33.33</td>
+                        <td>OO 대학교</td>
+                        <td>졸업</td>
+                        <td>OO 학과</td>
+                        <td>서울</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 교육연수 -->
+            <div>
+                <label>교육연수</label>
+                <table class="table">
+                    <!-- head -->
+                    <tr>
+                        <td class="label">연수기간</td>
+                        <td class="label">연수기관</td>
+                        <td class="label">연수과정 및 내용</td>
+                    </tr>
+
+                    <!-- body -->
+                    <tr>
+                        <td>2021.12.30~2022.06.22</td>
+                        <td>(주)이젠 아카데미</td>
+                        <td>Open API활용 자바 안드로읻 웹&앱 개발자</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 자격사항 -->
+            <div>
+                <label>자격사항</label>
+                <table class="table">
+                    <!-- head -->
+                    <tr>
+                        <td class="label">취득일</td>
+                        <td class="label">종류 및등급</td>
+                        <td class="label">발행처</td>
+                        <td class="label">보유기술 및 수준</td>
+                    </tr>
+
+                    <!-- body -->
+                    <tr>
+                        <td>2021.08</td>
+                        <td>워드프로세서 1급</td>
+                        <td>대한상공회의소</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2021.06</td>
+                        <td>정보처리기사</td>
+                        <td>한국산업인력공단</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 경력사항 -->
+            <div>
+                <label>경력사항(4대 보험 가입 경력)</label>
+                <table class="table">
+                    <!-- head -->
+                    <tr>
+                        <td class="label">활동기간</td>
+                        <td class="label">기관</td>
+                        <td class="label">담당업무</td>
+                        <td class="label">경험 및 습득역량</td>
+                    </tr>
+
+                    <!-- body -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="btn-box">
+				<button onclick="onSave()" class="button">저장</button>
+				<button onclick="location.href='./recruitList.html'" class="button">돌아가기</button>
+			</div>
+        </form>
+        
+        <script type="text/javascript">
+        	function onSave() {
+        		alert("저장 하시겠습니까?");
+        		location.href='./recruitView.html';
+        	}
+        </script>
+	</body>
+</html>
