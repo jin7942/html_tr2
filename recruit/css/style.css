@@ -4,7 +4,8 @@ table.list-table {
 	text-align: left;
 	line-height: 1.5;
 	border: 1px solid #ccc;
-	margin: 20px 10px;
+	margin: auto;
+	width: 80%;
 }
 
 table.list-table thead {

@@ -76,9 +76,9 @@
 
 	<script type="text/javascript">
 		function delRow() {
-			var tableData = document.getElementById('table');
-			for (var i = 1; i < tableData.rows.length; i++) {
-				var chhkbox = tableData.rows[i].cells[5].childNodes[0].checked;
+			const tableData = document.getElementById('table');
+			for (let i = 1; i < tableData.rows.length; i++) {
+				const chhkbox = tableData.rows[i].cells[5].childNodes[0].checked;
 
 				if (chhkbox) {
 					tableData.deleteRow(i);
