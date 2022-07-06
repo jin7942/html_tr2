@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+
+    <style>
+        .gnb {
+            background-color: aquamarine;
+            display: flex;
+        }
+
+        .gnb ul li {
+            display: inline;
+        }
+
+        .list {
+            background-color: beige;
+            float: left;
+        }
+
+        .side-nav {
+            background-color: beige;
+            float: right;
+        }
+        .body {
+            background-color: yellow;
+            display: flex;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            width: 100%;
+            height: 150px;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .table-caption {
+            text-align: left;
+            font-weight: bold;
+        }
+    </style>
+
+    <body>
+        <div class="header">
+            <h3>헤더</h3>
+        </div>
+
+        <div class="gnb">
+            <ul>
+                <li>메뉴</li>
+                <li>메뉴</li>
+                <li>메뉴</li>
+                <li>메뉴</li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <ul>
+                <li>회원 관리</li>
+                <li>사이트 관리</li>
+                <li>시스템 관리</li>
+                <li>커뮤니케이션 관리</li>
+                <li>템플릿 관리</li>
+                <li>로그 관리</li>
+                <li>통계</li>
+            </ul>
+        </div>
+
+        <div class="side-nav">
+            <ul>
+                <li>회원 관리</li>
+                <li>사이트 관리</li>
+                <li>시스템 관리</li>
+                <li>커뮤니케이션 관리</li>
+                <li>템플릿 관리</li>
+                <li>로그 관리</li>
+                <li>통계</li>
+            </ul>
+        </div>
+
+        <div class="body">
+            <table class="table">
+                <!-- head -->
+                <thead>
+                    <caption class="table-caption">
+                        회원관리
+                    </caption>
+                    <tr>
+                        <td>no</td>
+                        <td>관리자여부</td>
+                        <td>이름</td>
+                        <td>아이디</td>
+                        <td>이메일</td>
+                        <td>핸드폰</td>
+                        <td>마지막로그인</td>
+                        <td>회원가입일</td>
+                        <td>최근수정일</td>
+                        <td>탈퇴여부</td>
+                    </tr>
+                </thead>
+
+                <!-- body -->
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>N</td>
+                        <td>김진범</td>
+                        <td>kjbbjk</td>
+                        <td>aban@naver.com</td>
+                        <td>010-2341-1314</td>
+                        <td>1 days ago</td>
+                        <td>2022-06-04</td>
+                        <td>3 days ago</td>
+                        <td>N</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <footer>
+                <p>Copy right. 1230 Tony Teacher</p>
+            </footer>
+        </div>
+    </body>
+</html>
